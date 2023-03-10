@@ -51,31 +51,54 @@ Users should be able to:
 
 This is my 4th solution in FrontEndMentor. On this challenge I have learned opacity manipulation in CSS and displaying another image in front of the other giving more depth to hover effects.
 
+Below are the code snippet for the hover effects:
+```css
+.nftimg {
+    opacity: 1;
+    transition: .5s ease;
+}
 
-git add 
+.preview:hover .nftimg {
+    opacity: 0.3;
+}
+.preview:hover .midicon {
+    opacity: 1;
+}
+
+.midicon {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, 50%);
+    border-radius: 10px;
+    opacity: 0;
+    backface-visibility: hidden;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+```
+
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Learning is an unending process. Going to get more challenges as im learning a lot here. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Advantag of Mobile First workflow](https://www.youtube.com/watch?v=0ohtVzCSHqs) - This helped me in my workflow of mobile first design. I am going to adopt this workflow as I feel theres huge difference against with DESKTOP first.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@aldrinbfernandez](https://www.frontendmentor.io/profile/aldrinbfernandez)
+- Twitter - [@promdiGamer](https://twitter.com/promdiGamer)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I have been a member of frontend mentor for a while, and I have seen your link in the discord of Angela Yu. I just recently finished her course of Web Development Bootcamp in Udemy. Thanks to her, I got the arsenal (tho still have a lot to learn) to accomplish this challenge.
