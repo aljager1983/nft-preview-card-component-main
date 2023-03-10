@@ -1,0 +1,155 @@
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --lineblue:hsl(215, 32%, 27%);
+}
+
+body {
+    font-family: Outfit;
+    background-color: hsl(217, 54%, 11%);
+    
+}
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+.card {  
+    background-color: hsl(216, 50%, 16%);
+    width: 270px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.nftimg {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.preview:hover .nftimg {
+    opacity: 0.3;
+}
+.preview:hover .midicon {
+    opacity: 1;
+}
+
+.midicon {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    transition: .5s ease;
+    background-color: hsla(178, 100%, 50%, 50%);
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+img {
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5rem 0rem;  
+    color: var(--softblue);  
+    font-size: 1rem;
+}
+
+
+h1 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+h1:hover{
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+h3 {
+    color: var(--Cyan);
+    font-weight: 600;
+    font-size: 1rem;
+} 
+
+h4 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+h5 {
+    margin-left: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+h6 {
+    margin-left: 0.2rem;
+    text-align: left;
+    color: var(--Cyan);
+    font-weight: 300;
+}
+
+h6:hover {
+    cursor: pointer;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        
+}
+
+.ethinfo, .daysleft{
+    display: flex;
+}
+
+ 
+.clockimg, .ethimg {
+    margin-right: 0.5rem;
+    align-self: center;
+    height: 20px;
+}
+.clockimg {
+    width: 20px; 
+}
+
+ .ethimg {
+    width: 15px;  
+}
+
+hr {
+    border: 1px solid var(--lineblue);
+}
+
+.author {
+    display: flex;
+    align-items: center; 
+}
+
+.author img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
